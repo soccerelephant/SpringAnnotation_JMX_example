@@ -11,6 +11,11 @@
  MBeans->Soccer->JMX->metrics should display attributes of MBean.
  
  
+ How to view MBean attributes through rest API:
+ 
+ endpoint  of   http://localhost:8080/manager/jmxproxy/    will display attributes as JSON.
+ 
+ 
  How to configure Tomcat to instrument MBean:
  
  Create a setenv.bat (on Windows) or setenv.sh (on *nix) in Tomcat bin
@@ -20,4 +25,12 @@
  
  In tomcat-users.xml, add jmx role:
  
- <role rolename="manager-jmx"/> <user username="admin" password="admin" roles="manager-jmx"/>
+ <role rolename="manager-gui"/>
+ <role rolename="manager-jmx"/>
+ <user username="tomcat" password="tomcat" roles="manager-gui,manager-jmx"/>
+ 
+ 
+ 
+ This article is a good reference:
+ 
+ http://mrkimi01.blogspot.com/2014/03/jmx-tomcat-and-visualvm.html
