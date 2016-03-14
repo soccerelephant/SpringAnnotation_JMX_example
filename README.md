@@ -30,7 +30,6 @@
  <user username="tomcat" password="tomcat" roles="manager-gui,manager-jmx"/>
  
  
- 
  This article is a good reference:
  
  http://mrkimi01.blogspot.com/2014/03/jmx-tomcat-and-visualvm.html
