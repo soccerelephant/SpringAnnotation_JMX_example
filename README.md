@@ -24,10 +24,12 @@
  export CATALINA_OPTS="-Dcom.sun.management.jmxremote.port=8090 -Dcom.sun.management.jmxremote.authenticate=false    -Dcom.sun.management.jmxremote.ssl=false"
  
  In tomcat-users.xml, add jmx role:
-<role rolename="manager-gui"/>
-<role rolename="manager-jmx"/>
-<user username="tomcat" password="tomcat" roles="manager-gui,manager-jmx"/>
  
+ ```html
+ <role rolename="manager-gui"/>
+ <role rolename="manager-jmx"/>
+ <user username="tomcat" password="tomcat" roles="manager-gui,manager-jmx"/>
+ ```
  
  This article is a good reference:
  
